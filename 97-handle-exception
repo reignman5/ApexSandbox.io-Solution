@@ -1,0 +1,8 @@
+public String divide(Integer a, Integer b){
+    try {
+        return a.divide(b, 0, ROUNDINGMODE.DOWN)
+    }
+    catch(Error e) {
+        return e.getMessage();
+    }
+}
