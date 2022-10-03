@@ -6,7 +6,7 @@ public class Stack {
     }
     
     public Object pop() {
-        return objects.remove(objects.size()-1);
+        return objects.remove(1);
     }
     
     public Integer size() {
