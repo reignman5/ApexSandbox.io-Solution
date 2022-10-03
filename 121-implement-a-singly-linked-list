@@ -6,7 +6,7 @@ public class LinkedList{
         integers.add(0, value);
     }
     public Integer removeFromFront(){
-        if(integers.isEmpty()){
+        if(integers.size() == 0){
             return null;
         }
         return integers.remove(0);
