@@ -6,10 +6,10 @@ public class LinkedList{
         integers.add(0, value);
     }
     public Integer removeFromFront(){
-        if(integers.size() == 0){
+        if(integers.isEmpty()){
             return null;
         }
-        return integers.remove(1);
+        return integers.remove(0);
     }
     public void addToTail(Integer value){
         integers.add(integers.size()-1, value);
