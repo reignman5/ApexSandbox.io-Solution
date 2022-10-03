@@ -1,0 +1,12 @@
+public Integer secondLargest(List<Integer> numbers) {
+    Integer largest = 0;
+    Integer secondLargest = 0;
+    for(Integer number : numbers){
+        if(number >= largest){
+            largest = number;
+        } else if(number >= secondLargest){
+            secondLargest = number;
+        }
+    }
+    return secondLargest;
+}
