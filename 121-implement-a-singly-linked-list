@@ -3,7 +3,11 @@ public class LinkedList{
     List<Integer> integers = new List<Integer>();
     
     public void addToFront(Integer value){
-        integers.add(0, value);
+        if(integers.isEmpty()){
+            integers.add(value);
+        } else {
+            integers.add(0, value);
+        }
     }
     public Integer removeFromFront(){
         if(integers.isEmpty()){
