@@ -1,0 +1,13 @@
+public Map<String, Decimal> industrySummary(List<Account> accounts) {
+    Map<String, Decimal> industry2Revenue = new Map<String, Decimal>();
+
+    for(Account acc : accounts){
+        if(industry2Revenue.get(acc.Industry) != null){
+            industry2Revenue.put(acc.Industry, industry2Revenue.get(acc.Industry) + acc.AnnualRevenue);
+            continue;
+        }
+        industry2Revenue.put(acc.Industry, acc.AnnualRevenue);
+    }
+
+    return industry2Revenue;
+}
