@@ -1,0 +1,12 @@
+public Integer rockPaperScissors(String player1, String player2) {
+    Map<String, String> winners2losers = new Map<String, String>{
+        'rock' => 'scissors',
+        'scissors' => 'paper',
+        'paper' => 'rock'
+    };
+    return winners2losers.get(player1) == player2
+    ? 1
+    : winners2losers.get(player2) == player1
+    ? 2
+    : 0;
+}
