@@ -9,7 +9,7 @@ public class LinkedList{
         if(integers.size() == 0){
             return null;
         }
-        return integers.remove(0);
+        return integers.remove(1);
     }
     public void addToTail(Integer value){
         integers.add(integers.size()-1, value);
