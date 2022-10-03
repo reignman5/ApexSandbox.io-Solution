@@ -18,6 +18,6 @@ public class Stack {
     }
     
     public Boolean isEmpty() {
-        return objects.size()==0;
+        return objects.isEmpty();
     }
 }
