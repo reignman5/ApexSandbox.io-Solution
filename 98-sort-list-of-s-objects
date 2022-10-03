@@ -3,7 +3,12 @@ public List<Account> getAccounts(List<Account> accounts) {
     for(Account acc : accounts){
         accountsSorted.add(new AccountWrapper(acc));
     }
-    return accountsSorted.sort();
+    accountsSorted.sort();
+    List<Account> returnAccounts = new List<Account>();
+    for(AccountWrapper aw : accountsSorted){
+        returnAccounts.add(aw.acc);
+    }
+    return accountsSorted;
 }
 public class AccountWrapper implements Comparable {
 
