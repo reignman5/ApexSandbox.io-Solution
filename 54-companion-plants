@@ -1,0 +1,10 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    Map<String, List<String>> plant2companions = new Map<String, List<String>>{
+        'lettuce'  => new List<String>{'cucumbers', 'onions'},
+        'onions'  => new List<String>{'carrots', 'tomatoes', 'lettuce'},
+        'cucumbers'  => new List<String>{'lettuce'},
+        'carrots'  => new List<String>{'onions'},
+        'tomatoes'  => new List<String>{'onions'}
+    };
+    return plant2companions.get(plant1).contains(plant2);
+}
