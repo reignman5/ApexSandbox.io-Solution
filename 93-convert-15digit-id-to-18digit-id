@@ -1,0 +1,5 @@
+public String convert15to18DigitId(String fifteenDigit)
+{
+    Id eighteenDigit = fifteenDigit;  
+   return  eighteenDigit; 
+}
