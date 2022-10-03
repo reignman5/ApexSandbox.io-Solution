@@ -1,5 +1,5 @@
 public List<Account> getAccounts(List<Account> accounts) {
-    List<AccountWrapper> accountsSorted = new List<Account>();
+    List<AccountWrapper> accountsSorted = new List<AccountWrapper>();
     for(Account acc : accounts){
         accountsSorted.add(new AccountWrapper(acc));
     }
