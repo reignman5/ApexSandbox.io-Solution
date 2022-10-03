@@ -16,7 +16,7 @@ public class LinkedList{
         return integers.remove(0);
     }
     public void addToTail(Integer value){
-        integers.add(integers.size()-1, value);
+        integers.add(value);
     }
     public Integer removeFromTail(){
         if(integers.isEmpty()){
