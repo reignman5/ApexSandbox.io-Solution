@@ -3,7 +3,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
 
     for(Case ca : cases){
         if(type2Cases.get(ca.Type) != null){
-            List<Case> currentCases = type2Cases.get(ca.Type).add(ca);
+            List<Case> currentCases = type2Cases.get(ca.Type);
             type2Cases.put(ca.Type, currentCases);
             continue;
         }
