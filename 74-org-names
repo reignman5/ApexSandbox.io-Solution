@@ -1,8 +1,10 @@
 public List<String> orgNames(List<String> adjectives, List<String> animals) {
     List<String> fullNames = new List<String>();
-    List<String> biggerList = adjectives.size()>animals.size ? adjectives : animals
-    for(Integer i = 0;i<biggerList.size();i++){
-        fullNames.add(adjectives[i]+ '-' + animals[i]);
+    for(String adjective : adjectives){
+        for(String animal : animals){
+            fullNames.add(adjective+ '-' + animal); 
+        }
     }
+
     return fullNames;
 }
