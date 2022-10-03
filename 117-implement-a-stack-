@@ -10,11 +10,11 @@ public class Stack {
     }
     
     public Integer size() {
-       return objects.size()
+       return objects.size();
     }
     
     public Object peek(){
-        return objects[objects.size()-1]
+        return objects[objects.size()-1];
     }
     
     public Boolean isEmpty() {
