@@ -6,6 +6,9 @@ public class LinkedList{
         integers.add(0, value);
     }
     public Integer removeFromFront(){
+        if(integers.isEmpty()){
+            return null;
+        }
         return integers.remove(0);
     }
     public void addToTail(Integer value){
