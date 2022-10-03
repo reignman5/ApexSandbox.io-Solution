@@ -1,0 +1,11 @@
+public boolean isSorted(List<Integer> numbers) {
+    Boolean sorted = true;
+    for(Integer i = numbers.size()-1;i>=0;i--){
+        if(numbers[i] < numbers[i-1]||
+        numbers[i] > numbers[i-1]){
+            continue;
+        }
+        sorted = false;
+    }
+    return sorted;
+}
