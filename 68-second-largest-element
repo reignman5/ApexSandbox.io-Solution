@@ -2,10 +2,10 @@ public Integer secondLargest(List<Integer> numbers) {
     Integer largest = 0;
     Integer secondLargest = 0;
     for(Integer num : numbers){
-        if(num >= largest){
+        if(num > largest){
             secondLargest = largest;
             largest = num;
-        } else if(num >= secondLargest){
+        } else if(num > secondLargest){
             secondLargest = num;
         }
     }
