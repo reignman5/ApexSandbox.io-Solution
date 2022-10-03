@@ -1,7 +1,7 @@
 public List<Account> getAccounts(List<Account> accounts) {
     // code here
 }
-global class AccountWrapper implements Comparable {
+public class AccountWrapper implements Comparable {
 
     public Account acc;
     
@@ -9,7 +9,7 @@ global class AccountWrapper implements Comparable {
         this.acc = acc;
     }
     
-    global Integer compareTo(Object compareTo) {
+    public Integer compareTo(Object compareTo) {
         AccountWrapper compareToAcc = (AccountWrapper)compareTo;
         
         Integer returnValue = 0;
