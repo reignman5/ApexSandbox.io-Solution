@@ -1,0 +1,6 @@
+public String changeTimeFormat(String strTime) {
+    Integer hour = Integer.valueOf(strTime.subStringBefore(':'));
+    String timeOfDay = hour > 11 ? 'PM' : 'AM';
+    Integer calculatedHour = hour == 0 ? hour + 12 : hour > 12 ? hour - 12 : hour;
+    return strTime.replace(String.valueOf(hour), String.valueOf(calculatedHour)) + ' ' + timeOfDay;
+}
