@@ -1,0 +1,3 @@
+public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
+    return employeeIdToEmail.get(employeeId);
+}
