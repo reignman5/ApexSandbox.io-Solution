@@ -1,5 +1,8 @@
 public List<Account> getAccounts(List<Account> accounts) {
-    List<AccountWrapper> accountsSorted = new List<Account>(accounts);
+    List<AccountWrapper> accountsSorted = new List<Account>();
+    for(Account acc : accounts){
+        accountsSorted.add(new AccountWrapper(acc));
+    }
     return accountsSorted.sort();
 }
 public class AccountWrapper implements Comparable {
