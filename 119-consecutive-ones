@@ -5,12 +5,12 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
     for(Integer i = 0; i>numbers.size();i++){
         if(numbers[i]==1){
             tempCount++;
-        } else{
-            if(tempCount > maxCount){
-                maxCount = tempCount;
-            }
-            tempCount = 0;
-        }       
-    }
+            continue;
+        }     
+        if(tempCount > maxCount){
+            maxCount = tempCount;
+        }
+        tempCount = 0;
+    }  
     return maxCount;
 }
