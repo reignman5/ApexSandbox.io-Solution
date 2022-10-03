@@ -1,3 +1,3 @@
 public List<Account> getAccountsFromJSONString(String inputJSON){
-    return JSON.deserialize(inputJson, List<Account>.class);
+    return (list<Account>) JSON.deserialize(inputJson, List<Account>.class);
 }
