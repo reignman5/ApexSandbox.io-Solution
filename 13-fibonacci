@@ -1,0 +1,11 @@
+public Integer fibonacci(Integer n) {
+    Integer fibonacci = 1;
+    Integer lastFibonacci = 0;
+    Integer returnValue = 1;
+    for(Integer i = 1; i < n; i++){
+        returnValue = fibonacci + lastFibonacci;
+        lastFibonacci = fibonacci;
+        fibonacci = returnValue;
+    }
+    return returnValue;
+}
