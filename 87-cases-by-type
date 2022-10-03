@@ -2,6 +2,9 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     Map<String, List<Case>> type2Cases = new Map<String, List<Case>>();
 
     for(Case ca : cases){
+        if(ca.Type == null){
+            continue;
+        }
         if(type2Cases.get(ca.Type) != null){
             List<Case> currentCases = type2Cases.get(ca.Type);
             type2Cases.put(ca.Type, currentCases);
