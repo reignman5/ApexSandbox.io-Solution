@@ -3,4 +3,5 @@ public Map<String, String> phonebook(List<Contact> contacts) {
     for(Contact c : contacts){
         name2Phone.put(c.Name, c.Phone);
     }
+    return name2Phone;
 }
