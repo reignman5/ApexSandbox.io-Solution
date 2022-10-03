@@ -1,6 +1,6 @@
 public String divide(Integer a, Integer b){
     try {
-        return a.divide(b, 0, ROUNDINGMODE.DOWN);
+        return String.valueOff(a/b);
     }
     catch(Error e) {
         return e.getMessage();
