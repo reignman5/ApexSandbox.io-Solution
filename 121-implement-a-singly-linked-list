@@ -15,6 +15,9 @@ public class LinkedList{
         integers.add(integers.size()-1, value);
     }
     public Integer removeFromTail(){
+        if(integers.isEmpty()){
+            return null;
+        }
         return integers.remove(integers.size()-1);
     }
     public Integer size(){
