@@ -1,0 +1,7 @@
+public Set<Id> accountIds(List<Opportunity> opps) {
+    Set<Id> accIds = new Set<Id>();
+    for(Opportunity oppy : opps){
+        accIds.add(oppy.AccountId);
+    }
+    return accIds;
+}
