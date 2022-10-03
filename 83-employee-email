@@ -1,3 +1,3 @@
 public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
-    return employeeIdToEmail.get(employeeId) == null ? 'info@apexsandbox.io' : employeeIdToEmail.get(employeeId)
+    return employeeIdToEmail.get(employeeId) == null ? 'info@apexsandbox.io' : employeeIdToEmail.get(employeeId);
 }
