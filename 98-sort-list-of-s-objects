@@ -8,7 +8,7 @@ public List<Account> getAccounts(List<Account> accounts) {
     for(AccountWrapper aw : accountsSorted){
         returnAccounts.add(aw.acc);
     }
-    return accountsSorted;
+    return returnAccounts;
 }
 public class AccountWrapper implements Comparable {
 
