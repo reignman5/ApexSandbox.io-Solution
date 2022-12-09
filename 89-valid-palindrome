@@ -1,5 +1,5 @@
 public Boolean isPalindrome(String str){
-    String decodedJson = (String)JSON.deserialize(str.toLowerCase(), String.class);
+    str = str.replaceAll('[^a-zA-Z0-9\\s+]', '');
     List<String> splitString = decodedJson.split('');
     Boolean isPalindrome = true;
     for (Integer i = 0; i < splitString.size(); i++) {
