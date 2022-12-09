@@ -1,6 +1,6 @@
 public Boolean isPalindrome(String str){
-    str = str.replaceAll('[^a-zA-Z0-9\\s+]', '');
-    List<String> splitString = decodedJson.split('');
+    str = str.toLowerCase().replaceAll('[^a-zA-Z0-9\\s+]', '');
+    List<String> splitString = str.split('');
     Boolean isPalindrome = true;
     for (Integer i = 0; i < splitString.size(); i++) {
         if(splitString[i] != splitString[splitString.size()-1-i]){
