@@ -1,7 +1,7 @@
 public Boolean isPalindrome(String str){
     String decodedJson = (String)JSON.deserialize(str.toLowerCase(), String.class);
     List<String> splitString = decodedJson.split('');
-    for (Integer i = 0; i < length; i++) {
-        splitString[i] == splitString[length-1-i];
+    for (Integer i = 0; i < splitString.length(); i++) {
+        splitString[i] == splitString[splitString.length()-1-i];
     }
 }
