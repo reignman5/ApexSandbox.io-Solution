@@ -1,5 +1,5 @@
 public Boolean isPalindrome(String str){
-    str = str.toLowerCase().replaceAll('[^a-zA-Z0-9\\s+]', '');
+    str = str.toLowerCase().deleteWhitespace().replaceAll('[^a-zA-Z0-9\\s+]', '');
     List<String> splitString = str.split('');
     Boolean isPalindrome = true;
     for (Integer i = 0; i < splitString.size(); i++) {
