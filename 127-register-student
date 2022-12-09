@@ -5,5 +5,5 @@ public String registerStudent(String name, String phone, String email) {
         apxio__Email__c = email
     );
     insert student;
-    return student.apxio__Registration_Number__c;
+    return [Select apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = :student.Id].apxio__Registration_Number__c;
 }
