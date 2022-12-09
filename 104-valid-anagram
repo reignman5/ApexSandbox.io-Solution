@@ -8,7 +8,8 @@ public boolean isAnagram(String s1, String s2) {
             isAnagram = false;
             break;
         }
-        s2List.remove(s);
+        
+        s2List.remove(s2List.indexOf(s));
     }
     return isAnagram;
 }
